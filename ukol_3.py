@@ -1,6 +1,10 @@
 from ukol_3_transform import transform
 from ukol_3_vzdalenosti import vzd_med
+import statistics
 import json
+
+
+
 
 #Otevření a načtení souborů s daty
 with open ('adresy.geojson', encoding="utf-8") as geofile1,\
@@ -27,6 +31,7 @@ with open ('adresy.geojson', encoding="utf-8") as geofile1,\
     kon_sou = []
 
     out_vzd_med = ()
+    fin_prum = 0
     #Načtení a převod souřadnic adres  
     for feature in adresy['features']:
         adr_del.append(feature['geometry']['coordinates'][0])
@@ -41,8 +46,8 @@ with open ('adresy.geojson', encoding="utf-8") as geofile1,\
      
     #Načtení a převod souřadnic kontejnerů
     for feature in kontejnery['features']:
-        kon_del.append(feature['geometry']['coordinates'][0])
-        kon_sir.append(feature['geometry']['coordinates'][1])
+        kon_sir.append(feature['geometry']['coordinates'][0])
+        kon_del.append(feature['geometry']['coordinates'][1])
         pristup = (feature['properties']['PRISTUP'])
         kon_count += 1
 
@@ -59,11 +64,23 @@ with open ('adresy.geojson', encoding="utf-8") as geofile1,\
         l.append(nk_sir[_])
         l.append(nk_del[_])
         kon_sou.append(l)
+    for _ in range (len(adr_sou)):
+        print(adr_sou[_],adresa[_])
     for _ in range (len(kon_sou)):
         print(kon_sou[_])
     
+
     out_vzd_med=(vzd_med(adr_sou,kon_sou))
     print(out_vzd_med)
 
-print("Ahojda")
+    #Celkový průměr - můžeme ho vypočítat takto díky distributivitě násobení
+    for _ in range(len(adr_sir)):
+        print(out_vzd_med[0][_])
+        fin_prum = fin_prum + int(out_vzd_med[0][_])
+    fin_prum = fin_prum/(len(adr_sir))   
 
+print("Ahojda")
+print("Nacteno",adr_count,"adresnich bodu.")
+print("Nacteno",kon_count,"kontejneru na trideny odpad.")
+print()
+print("Prumerna vzdalenost ke kontejneru je",f"{(fin_prum):.0f}","m.")
