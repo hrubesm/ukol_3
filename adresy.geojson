@@ -1,0 +1,217 @@
+{
+    "type": "FeatureCollection",
+    "generator": "overpass-ide",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "timestamp": "2021-12-06T13:44:39Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/295484388",
+          "addr:city": "Praha",
+          "addr:housenumber": "48",
+          "addr:postcode": "11800",
+          "addr:street": "Nerudova",
+          "amenity": "restaurant",
+          "name": "Golden Star",
+          "outdoor_seating": "yes",
+          "wheelchair": "limited"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3965729,
+            50.0886093
+          ]
+        },
+        "id": "node/295484388"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296442393",
+          "addr:conscriptionnumber": "104",
+          "addr:housenumber": "104/36",
+          "addr:postcode": "11800",
+          "addr:street": "Úvoz",
+          "addr:streetnumber": "36",
+          "source:addr": "uir_adr",
+          "uir_adr:ADRESA_KOD": "21691410"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3922866,
+            50.0879372
+          ]
+        },
+        "id": "node/296442393"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296442828",
+          "addr:conscriptionnumber": "48",
+          "addr:housenumber": "48/2",
+          "addr:postcode": "11900",
+          "addr:street": "Hrad III. nádvoří",
+          "addr:streetnumber": "2",
+          "source:addr": "uir_adr",
+          "uir_adr:ADRESA_KOD": "21690731"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3999254,
+            50.0904033
+          ]
+        },
+        "id": "node/296442828"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296446531",
+          "addr:conscriptionnumber": "25",
+          "addr:housenumber": "25/26",
+          "addr:place": "Hradčany",
+          "addr:postcode": "11900",
+          "addr:street": "Zlatá ulička u Daliborky",
+          "addr:streetnumber": "26",
+          "ref:ruian:addr": "21690561"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.4036379,
+            50.0919436
+          ]
+        },
+        "id": "node/296446531"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296447313",
+          "addr:conscriptionnumber": "67",
+          "addr:housenumber": "67/8",
+          "addr:postcode": "11800",
+          "addr:street": "Hradčanské náměstí",
+          "addr:streetnumber": "8",
+          "source:addr": "uir_adr",
+          "uir_adr:ADRESA_KOD": "21690901"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3951593,
+            50.0899349
+          ]
+        },
+        "id": "node/296447313"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296447370",
+          "addr:conscriptionnumber": "79",
+          "addr:housenumber": "79/7",
+          "addr:postcode": "11800",
+          "addr:street": "Nový Svět",
+          "addr:streetnumber": "7",
+          "source:addr": "uir_adr",
+          "uir_adr:ADRESA_KOD": "21691070"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3921789,
+            50.0907413
+          ]
+        },
+        "id": "node/296447370"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296447406",
+          "addr:conscriptionnumber": "227",
+          "addr:housenumber": "227/6",
+          "addr:postcode": "11800",
+          "addr:street": "Gogolova",
+          "addr:streetnumber": "6",
+          "source:addr": "uir_adr",
+          "uir_adr:ADRESA_KOD": "21692611"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.4100821,
+            50.0948889
+          ]
+        },
+        "id": "node/296447406"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296449053",
+          "addr:conscriptionnumber": "10",
+          "addr:housenumber": "10/12",
+          "addr:place": "Hradčany",
+          "addr:postcode": "11900",
+          "addr:street": "Jiřská",
+          "addr:streetnumber": "12",
+          "ref:ruian:addr": "21690405"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.4037035,
+            50.0915915
+          ]
+        },
+        "id": "node/296449053"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296449855",
+          "addr:conscriptionnumber": "94",
+          "addr:housenumber": "94/17",
+          "addr:postcode": "11800",
+          "addr:street": "Jelení",
+          "addr:streetnumber": "17",
+          "source:addr": "uir_adr",
+          "uir_adr:ADRESA_KOD": "21691240"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3896208,
+            50.0920118
+          ]
+        },
+        "id": "node/296449855"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/296451572",
+          "addr:conscriptionnumber": "127",
+          "addr:housenumber": "127/7",
+          "addr:postcode": "11800",
+          "addr:street": "Strahovské nádvoří",
+          "addr:streetnumber": "7",
+          "source:addr": "uir_adr",
+          "uir_adr:ADRESA_KOD": "21691592"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            14.3878403,
+            50.0863715
+          ]
+        },
+        "id": "node/296451572"
+      }]}
