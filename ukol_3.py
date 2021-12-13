@@ -16,19 +16,15 @@ try:
         adr_count = 0
         adr_del = []
         adr_sir = []
-        na_del = []
-        na_sir = []
         adr_sou = []
 
         #Vytvoření proměnných pro kontejnery
-        kontejner = []
+     
         kon_count = 0
         kon_del = []
         kon_sir = [] 
-        nk_del = []
-        nk_sir = [] 
         kon_sou = []
-
+        
         #Vytvoření ostatních proměnných
         out_vzd_med = ()
         fin_prum = 0
@@ -41,40 +37,30 @@ try:
             adr_ulice.append(feature['properties']['addr:street'])
             adr_cislo.append(feature['properties']['addr:housenumber'])
             adr_count += 1
-        na_del = [float(i) for i in adr_del]
-        na_sir = [float(i) for i in adr_sir]
-        for _ in range(len(na_del)):
-            adr_sou.append(transform(na_sir[_],na_del[_]))
+        for j in range(len(adr_del)):
+            adr_sou.append(transform(adr_sir[j],adr_del[j]))
         
-        #Načtení a převod souřadnic kontejnerů
+        #Načtení a převod souřadnic volně přístupných kontejnerů 
         for feature in kontejnery['features']:
-            kon_sir.append(feature['geometry']['coordinates'][0])
-            kon_del.append(feature['geometry']['coordinates'][1])
             pristup = (feature['properties']['PRISTUP'])
-            kon_count += 1
-
-            #Ošetření že používáme pouze veřejné kontejnery
-            if pristup == "obyvatelům domu":
-                kon_del.pop()
-                kon_sir.pop()
-                kon_count -= 1    
-                
-        nk_del = [float(i) for i in kon_del]
-        nk_sir = [float(i) for i in kon_sir]
-        for _ in range(len(nk_del)):
+            if pristup == "volně":    
+                kon_sir.append(feature['geometry']['coordinates'][0])
+                kon_del.append(feature['geometry']['coordinates'][1])               
+                kon_count += 1   
+        for j in range(len(kon_del)):
             l = []
-            l.append(nk_sir[_])
-            l.append(nk_del[_])
+            l.append(kon_sir[j])
+            l.append(kon_del[j])
             kon_sou.append(l)
         
         #Načtení dat z funkce počítající se vzdálenostmi a s mediánem
         out_vzd_med=(vzd_med(adr_sou,kon_sou))
 
         #Určení adresy místa s největší vzdáleností k nejbližšímu kontejneru a kotrola, že jsou tyto vzdálenosti menší než 10 km
-        for _ in range (len(adr_sir)):
-            if int(out_vzd_med[2][_]) > max_of_min:
-                max_of_min = int(out_vzd_med[2][_])
-                max_idx = _
+        for i in range (len(adr_sir)):
+            if int(out_vzd_med[2][i]) > max_of_min:
+                max_of_min = int(out_vzd_med[2][i])
+                max_idx = i
                 if max_of_min > 10000:
                     print("Pravděpodobná chyba v souřadnicích. Jedna z nejmenších vzdáleností ke kontejneru je větší než 10 km.")
                     exit()
@@ -90,7 +76,7 @@ try:
     print("Nacteno",adr_count,"adresnich bodu.")
     print("Nacteno",kon_count,"kontejneru na trideny odpad.")
     print()
-    print("Prumerna vzdalenost ke kontejneru je",f"{(fin_prum):.0f}","m.")
+    print("Prumerna vzdalenost ke kontejneru je",round(fin_prum),"m.")
     print("Median vzdalenosti ke kontejneru je",med_out,"m.")
     print("Nejdale je to k nejblizsimu kontejneru na adrese",adr_ulice[max_idx],adr_cislo[max_idx],"a to konkrétně",max_of_min,"m.")
 except IOError:
