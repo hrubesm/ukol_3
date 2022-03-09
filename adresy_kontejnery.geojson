@@ -1,0 +1,240 @@
+{
+   "type": "FeatureCollection",
+   "generator": "overpass-ide",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+   "timestamp": "2021-12-06T13:44:39Z",
+   "features": [
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/295484388",
+            "addr:city": "Praha",
+            "addr:housenumber": "48",
+            "addr:postcode": "11800",
+            "addr:street": "Nerudova",
+            "amenity": "restaurant",
+            "name": "Golden Star",
+            "outdoor_seating": "yes",
+            "wheelchair": "limited",
+            "kontejner": 4271
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.3965729,
+               50.0886093
+            ]
+         },
+         "id": "node/295484388"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296442393",
+            "addr:conscriptionnumber": "104",
+            "addr:housenumber": "104/36",
+            "addr:postcode": "11800",
+            "addr:street": "\u00davoz",
+            "addr:streetnumber": "36",
+            "source:addr": "uir_adr",
+            "uir_adr:ADRESA_KOD": "21691410",
+            "kontejner": 5848
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.3922866,
+               50.0879372
+            ]
+         },
+         "id": "node/296442393"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296442828",
+            "addr:conscriptionnumber": "48",
+            "addr:housenumber": "48/2",
+            "addr:postcode": "11900",
+            "addr:street": "Hrad III. n\u00e1dvo\u0159\u00ed",
+            "addr:streetnumber": "2",
+            "source:addr": "uir_adr",
+            "uir_adr:ADRESA_KOD": "21690731",
+            "kontejner": 4271
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.3999254,
+               50.0904033
+            ]
+         },
+         "id": "node/296442828"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296446531",
+            "addr:conscriptionnumber": "25",
+            "addr:housenumber": "25/26",
+            "addr:place": "Hrad\u010dany",
+            "addr:postcode": "11900",
+            "addr:street": "Zlat\u00e1 uli\u010dka u Daliborky",
+            "addr:streetnumber": "26",
+            "ref:ruian:addr": "21690561",
+            "kontejner": 3679
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.4036379,
+               50.0919436
+            ]
+         },
+         "id": "node/296446531"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296447313",
+            "addr:conscriptionnumber": "67",
+            "addr:housenumber": "67/8",
+            "addr:postcode": "11800",
+            "addr:street": "Hrad\u010dansk\u00e9 n\u00e1m\u011bst\u00ed",
+            "addr:streetnumber": "8",
+            "source:addr": "uir_adr",
+            "uir_adr:ADRESA_KOD": "21690901",
+            "kontejner": 4271
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.3951593,
+               50.0899349
+            ]
+         },
+         "id": "node/296447313"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296447370",
+            "addr:conscriptionnumber": "79",
+            "addr:housenumber": "79/7",
+            "addr:postcode": "11800",
+            "addr:street": "Nov\u00fd Sv\u011bt",
+            "addr:streetnumber": "7",
+            "source:addr": "uir_adr",
+            "uir_adr:ADRESA_KOD": "21691070",
+            "kontejner": 4271
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.3921789,
+               50.0907413
+            ]
+         },
+         "id": "node/296447370"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296447406",
+            "addr:conscriptionnumber": "227",
+            "addr:housenumber": "227/6",
+            "addr:postcode": "11800",
+            "addr:street": "Gogolova",
+            "addr:streetnumber": "6",
+            "source:addr": "uir_adr",
+            "uir_adr:ADRESA_KOD": "21692611",
+            "kontejner": 2288
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.4100821,
+               50.0948889
+            ]
+         },
+         "id": "node/296447406"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296449053",
+            "addr:conscriptionnumber": "10",
+            "addr:housenumber": "10/12",
+            "addr:place": "Hrad\u010dany",
+            "addr:postcode": "11900",
+            "addr:street": "Ji\u0159sk\u00e1",
+            "addr:streetnumber": "12",
+            "ref:ruian:addr": "21690405",
+            "kontejner": 3679
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.4037035,
+               50.0915915
+            ]
+         },
+         "id": "node/296449053"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296449855",
+            "addr:conscriptionnumber": "94",
+            "addr:housenumber": "94/17",
+            "addr:postcode": "11800",
+            "addr:street": "Jelen\u00ed",
+            "addr:streetnumber": "17",
+            "source:addr": "uir_adr",
+            "uir_adr:ADRESA_KOD": "21691240",
+            "kontejner": 4271
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.3896208,
+               50.0920118
+            ]
+         },
+         "id": "node/296449855"
+      },
+      {
+         "type": "Feature",
+         "properties": {
+            "@id": "node/296451572",
+            "addr:conscriptionnumber": "127",
+            "addr:housenumber": "127/7",
+            "addr:postcode": "11800",
+            "addr:street": "Strahovsk\u00e9 n\u00e1dvo\u0159\u00ed",
+            "addr:streetnumber": "7",
+            "source:addr": "uir_adr",
+            "uir_adr:ADRESA_KOD": "21691592",
+            "kontejner": 4271
+         },
+         "geometry": {
+            "type": "Point",
+            "coordinates": [
+               14.3878403,
+               50.0863715
+            ]
+         },
+         "id": "node/296451572"
+      }
+   ],
+   "properties": {
+      "@id": "node/296451572",
+      "addr:conscriptionnumber": "127",
+      "addr:housenumber": "127/7",
+      "addr:postcode": "11800",
+      "addr:street": "Strahovsk\u00e9 n\u00e1dvo\u0159\u00ed",
+      "addr:streetnumber": "7",
+      "source:addr": "uir_adr",
+      "uir_adr:ADRESA_KOD": "21691592",
+      "kontejner": 4271
+   }
+}

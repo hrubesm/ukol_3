@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2021-12-06T13:44:39Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/295484388",
+        "addr:city": "Praha",
+        "addr:housenumber": "48",
+        "addr:postcode": "11800",
+        "addr:street": "Nerudova",
+        "amenity": "restaurant",
+        "name": "Golden Star",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3965729,
+          50.0886093
+        ]
+      },
+      "id": "node/295484388"
+    }
+    ]}
